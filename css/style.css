@@ -1,0 +1,579 @@
+/* CSS Document */
+@font-face{
+	src: url("../font/Recoleta-Bold.ttf");
+	font-family: Recoleta-Bold;
+}
+@font-face{
+	src: url("../font/Recoleta-Regular.ttf");
+	font-family: Recoleta-Regular;
+}
+
+@font-face{
+	src: url("../font/Recoleta-Light.ttf");
+	font-family: Recoleta-Light;
+}
+
+@font-face{
+	src: url("../font/Brice-Regular.otf");
+	font-family: Brice;
+}
+
+@font-face{
+	src: url("../font/Brice-ExtraLight.otf");
+	font-family: Brice-Light;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body{
+	background: url("../img/bg.png");
+/*	background-size: contain;*/
+}
+
+.wrapper-1{
+	width: 100%;
+	height: 920px;
+}
+
+header{
+	width: calc( 100% - 60px );
+	height: 200px;
+	padding: 30px;
+}
+
+.logo{
+	position: relative;
+	width:15%;
+	float:left;
+	padding-top: 30px;
+	margin-left: 30px;
+	/*	background:red;*/
+}
+
+.logo img{
+	width: 100%;
+	height: auto;
+	animation: xoay 3.5s linear infinite;
+}
+
+@keyframes xoay{
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(360deg)}
+}
+
+.menu{
+	width: 60%;
+	height: 100px;
+	right:0;
+	position:fixed;
+	z-index: 999999;
+	text-align:right;
+/*	background:blue;*/
+}
+
+.menu ul{
+	list-style: none;
+	text-align: right;
+}
+
+.menu ul li{
+	display: inline-block;
+	margin-right: 130px;
+	line-height: 90px;
+}
+
+.menu ul li a{
+	color: lightgray;
+	text-decoration: none;
+	font-size: 23px;
+	font-family: Brice;
+}
+
+.menu ul li:hover{
+	transform: translate(-40px,-20px) scale(1.5);
+	transition: all 1.5s;
+}
+
+.menu ul li a:hover{color: #0B6885;}
+
+.introduce{
+	width: 1100px;
+	height: 300px;
+/*	background: gray;*/
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+.introduce span{
+	transition: all 8s;
+}
+.introduce h1{
+	font-family: Recoleta-Bold;
+	font-size: 105px;
+	letter-spacing: -6px;
+	color: darkgray;
+	transition: background 5s 2s ease;
+	transition: all 1.5s;
+}	
+
+.introduce span:hover{
+	transition: all 0.1s;
+	cursor: pointer;
+}
+
+.introduce h1:hover{
+	transform: scale(1.3);
+}
+
+.introduce .color1:hover{
+	color: #FFA400;
+}
+
+.introduce .color2:hover{
+	color: #00CCFB;
+}
+
+.introduce .color3:hover{
+	color: crimson;
+}
+
+.introduce .color4:hover{
+	color: #B200FF;
+}
+
+.introduce .color5:hover{
+	color: #FFDF00;
+}
+
+.icon img{
+	width: 120px;
+	height: 120px;
+	position: fixed;
+	right: 90px;
+	top: 720px;
+	animation: xoay 6s linear infinite;
+}
+
+.wrapper-2{
+	width: 100%;
+	height: 920px;
+	position: relative;
+/*	background: green;*/
+}
+
+.gif img{
+	width: 500px;
+	height: auto;
+	margin-top: 200px;
+	margin-left: 150px;
+/*	background: blue;*/
+}
+
+.tittle{
+	width: 500px;
+/*	height: 500px;*/
+	text-align: left;
+	top: 200px;
+	right: 350px;
+	position: absolute;
+/*	background: blue;*/
+}
+
+.tittle h2{
+	font-size: 100px;
+	font-family: Brice-Light;
+	color: darkgray;
+	transition: 0.5s linear;
+}
+
+.tittle h2:hover{
+	transform: rotate(-5deg);
+	color: #0A6CA8;
+}
+
+.tittle p{
+	font-size: 16px;
+	font-family: Recoleta-Regular;
+	margin-top: 28px;
+	margin-bottom: 8px;
+	transition: 0.5s linear;
+}
+
+.tittle p:hover{
+	transform: scale(1.2);
+	color: #0A6CA8;
+	
+}
+
+.content{
+	width: 600px;
+	height: 80px;
+/*	background: yellow;*/
+	top: 600px;
+	right: 250px;
+	position: absolute;
+}
+
+.content h3{
+	font-size: 14px;
+	font-family: Recoleta-Regular;
+/*	margin-top: 150px;*/
+	z-index: 10;
+}
+
+.content h3:hover{
+	transform: scale(1.4);
+	color: #914DBA;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.wrapper-3{
+	width: 100%;
+	height: 920px;
+/*	background: red;*/
+	overflow: hidden;
+}
+
+.work-hard{
+	width: 150%;
+	height: 100px;
+/*	background: blue;*/
+	animation: wh-1 8s linear infinite;
+	position: relative;
+}
+
+.work-hard h1{
+	font-size: 50px;
+	font-family: Brice;
+	display: inline-block;
+	margin-left: 100px;
+	line-height: 100px;
+	color: #CB6838;
+}
+
+.work-hard h1 span{
+	color: #E7DCD1;
+}
+
+@keyframes wh-1{
+	from{transform: translateX(-2500px)}
+	to{transform: translateX(1500px)}
+}
+
+.mywork h1{
+	font-size: 50px;
+	font-family: Recoleta-Light;
+	color: darkgray;
+	text-align: center;
+	margin-top: 250px;
+	transition: 0.5s ease-in;
+}
+
+.mywork h1:hover{
+	transform: rotate(-3deg) scale(1.3);
+	color: slateblue;
+	font-family: Recoleta-Regular;
+}
+
+.mywork p{
+	font-size: 30px;
+	font-family: Recoleta-Regular;
+	text-align: center;
+	margin-top: 90px;
+	transition: 0.5s ease-out;
+}
+
+.mywork p a{
+	color: #3F3F3F;
+	text-decoration: none;
+}
+
+.mywork p:hover{
+	transform: rotate(-5deg) scale(1.8);
+}
+
+.mywork p a:hover{
+	color: crimson;
+	font-family: Recoleta-Bold;
+}
+
+
+.wrapper-4{
+	width: 100%;
+	height: 1840px;
+/*	background: purple;*/
+	margin-top: 0px;
+	position: relative;
+}
+
+.some-of-work{
+	width: 100%;
+	height: 920px;
+/*	background: yellow;*/
+	position: relative;
+}
+
+.kitkat .typo1{
+	width: 19%;
+	float: left;
+	filter: grayscale(100%);
+	transition: 0.5s ease-in;
+	position: absolute;
+	top: 280px;
+	left: 150px;
+	z-index: 2;
+}
+
+.kitkat .typo1:hover{
+	transform: translate(-40px,-30px) scale(1.2) rotate(-5deg);
+	filter: grayscale(0);
+}
+
+.kitkat .typo2{
+	width: 19%;
+	float: left;
+	filter: grayscale(100%);
+	transition: 0.5s ease-in;
+	position: absolute;
+	top: 200px;
+	left: 460px;
+}
+
+.kitkat .typo2:hover{
+	transform: translate(40px,-50px) scale(1.2) rotate(5deg);
+	filter: grayscale(0);
+	z-index: 3;
+}
+
+.kitkat h1{
+	font-size: 25px;
+	font-family: Brice;
+	bottom: 110px; 
+	left: 150px;
+	position: absolute;	
+	color: #141414;
+}
+
+.kitkat a{
+	font-size: 18px;
+	font-family: Recoleta-Regular;
+	bottom: 70px; 
+	left: 150px;
+	position: absolute;	
+	color: #141414;
+}
+
+.muinsa img{
+	width: 21%;
+	float: right;
+	margin-right: 200px;
+	padding-top: 130px;
+	filter: grayscale(100%);
+	transition: 0.5s ease-in;
+}
+
+.muinsa img:hover{
+	transform: rotate(5deg) scale(1.2);
+	filter: grayscale(0);
+}
+
+.muinsa h1{
+	font-size: 25px;
+	font-family: Brice;
+	bottom: 355px; 
+	right: 295px;
+	position: absolute;	
+	color: #141414;
+}
+.muinsa a{
+	font-size: 18px;
+	font-family: Recoleta-Regular;
+	display: inline-block;
+	position: absolute;
+	bottom: 312px; 
+	right: 428px;
+	color: #141414;
+}
+
+.arrow img{
+	width: 8%;
+	position: absolute;
+	bottom: 7px;
+	left: 750px;
+}
+
+.some-of-work-2{
+	width: 100%;
+	height: 920px;
+/*	background: green;*/
+	position: relative;
+}
+
+.magazine1{
+	width: 27%;
+	float: left;
+	filter: grayscale(100%);
+	transition: 0.5s ease-out;
+	position: absolute;
+	top: 150px;
+	left: 140px;
+	z-index: 2;
+}
+
+.magazine2{
+	width: 27%;
+	float: right;
+	filter: grayscale(100%);
+	transition: 0.5s ease-out;
+	position: absolute;
+	top: 150px;
+	right: 130px;
+	z-index: 2;
+}
+
+.magazine3{
+	width: 23%;
+	filter: grayscale(100%);
+	transition: 0.5s ease-out;
+	position: absolute;
+	bottom: 290px;
+	left: 637px;
+	z-index: 1;
+}
+
+.magazine3:hover{z-index: 3;}
+
+.magazine img:hover{
+	transform: scale(1.5);
+	filter: grayscale(0);
+	border-radius: 5%;
+}
+
+.magazine h1{
+	font-size: 25px;
+	font-family: Brice;
+	bottom: 190px; 
+	left: 638px;
+	position: absolute;	
+	color: #141414;
+}
+.magazine a{
+	font-size: 18px;
+	font-family: Recoleta-Regular;
+	display: inline-block;
+	position: absolute;
+	bottom: 143px; 
+	left: 638px;
+	color: #141414;
+}
+
+.arrow-2 img{
+	width: 8%;
+	position: absolute;
+	bottom: 7px;
+	left: 750px;
+}
+
+.wrapper-5{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+/*	background: purple;*/
+}
+
+.run-line{
+	width: 150%;
+	height: 100px;
+/*	background: blue;*/
+	animation: wh-1 16s linear infinite;
+	position: relative;
+	float: left;
+}
+
+.run-line p{
+	font-size: 20px;
+	font-family: Brice-Light;
+	display: inline-block;
+	margin-left: 100px;
+	line-height: 100px;
+	color: goldenrod;
+}
+
+.flower{
+	width: 10%;
+	left: 730px;
+	top: 120px;
+	position: absolute;
+	animation: phongto 4.5s ease infinite;
+}
+
+@keyframes phongto{
+	0%{transform: scale(0)}
+	50%{transform: scale(1.1)}
+	100%{transform: scale(0)}
+}
+
+.contact{
+	width: 100%;
+	height: 250px;
+	background: #1B1B1B;
+	position: absolute;
+	bottom: 0px;
+}
+
+.contact h1{
+	width: 35%;
+	color: aliceblue;
+	font-size: 27px;
+	font-family: Brice-Light;
+	position: absolute;
+	left: 150px;
+	top: 65px;
+}
+
+.contact img{
+	width: 20px;
+}
+
+.contact h3{
+	color: aliceblue;
+	font-size: 15px;
+	font-family: Recoleta-Light;
+	position: absolute;
+	top: 120px;
+	right: 220px;
+	letter-spacing: 2px;
+	transition: background 2s linear;
+}
+
+.contact h3 span{font-family: Recoleta-Bold}
+
